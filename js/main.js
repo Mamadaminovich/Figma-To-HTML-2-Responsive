@@ -39,6 +39,8 @@ $(function () {
     ],
   });
   $(".blog__inner").slick({
+    centerMode: true,
+    centerPadding: "0px",
     slidesToShow: 3,
     slidesToScroll: 1,
     infinity: true,
@@ -46,22 +48,26 @@ $(function () {
       '<button class="prev__btn-2 slider__btn"><img src="images/prev__btn.svg"></button>',
     nextArrow:
       '<button class="next__btn-2 slider__btn"><img src="images/next__btn.svg"></button>',
-      responsive: [
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: "0px",
         },
-        {
-          breakpoint: 540,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: "0px",
         },
-      ],
+      },
+    ],
   });
 
   $(".service__inner-play-popup").magnificPopup({

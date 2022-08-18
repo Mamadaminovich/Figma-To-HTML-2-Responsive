@@ -23,8 +23,6 @@
   .tesimon__title {
     margin-bottom: 60px;
   }
-  .slider__item-text {
-  }
 }
 @media (max-width: 1360px) {
   .service__inner-title {
@@ -193,6 +191,19 @@
 }
 @media (max-width: 1000px) {
   .prev__btn {
+    top: 425px;
+    left: 46%;
+}
+  .team__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin: 0 70px;
+  }
+  .team__member {
+    max-width: 100%;
+  }
+  .prev__btn {
     left: 46%;
   }
   .steps {
@@ -331,6 +342,13 @@
   .prev__btn-2,
   .prev__btn {
     left: 45%;
+  }
+  .blog__inner .slick-current {
+    box-shadow: none;
+    transform: translateY(0px);
+  }
+  .blog__box {
+    opacity: 1;
   }
 }
 @media (max-width: 780px) {
@@ -536,6 +554,9 @@
   }
   .content-box__descr {
     font-size: 13px;
+  }
+  .team__inner {
+    margin: 0 0;
   }
 }
 @media (max-width: 665px) {
@@ -945,6 +966,12 @@
   }
 }
 @media (max-width: 340px) {
+  .team__member {
+    grid-template-columns: 85% 15%;
+  }
+  .team__member-icon {
+    width: 18px;
+  }
   .logo {
     margin-right: 20px;
   }

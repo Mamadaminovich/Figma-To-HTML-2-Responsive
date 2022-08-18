@@ -18,7 +18,21 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
 }
-
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul li {
+    list-style-type: none;
+  }
 body {
     line-height:1;
 }
